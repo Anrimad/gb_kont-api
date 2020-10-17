@@ -9,7 +9,7 @@
 
   <body>
     <header class="header">
-      <img class="header__logo" src="img/actionbyh-logo.svg" alt="Актион Бухгалтерия" width="170" height="14 />
+      <img class="header__logo" src="img/actionbyh-logo.svg" alt="Актион Бухгалтерия" width="170" height="14"/>
       <div class="header__signin">
         <img src="img/header-signin.svg" alt="" />
       </div>
@@ -61,47 +61,47 @@
             <div class="about__content-left">
               <ul class="about__content-list about-list">
                 <li class="about-list__item">
-                  <a class="about-list__link active" href="#" id="avtory">Оценка уровня бухгалтерских рисков</a>
+                  <a class="about-list__link" href="#" id="risk">Оценка уровня бухгалтерских рисков</a>
                   <p class="about-list__desc">Рекомендации на&nbsp;какие показатели следует обратить особое внимание бухгалтеру</p>
                 </li>
                 <li class="about-list__item">
-                  <a class="about-list__link" href="#" id="situation">Полный комплект отчетов для ИФНС</a>
+                  <a class="about-list__link" href="#" id="ifns">Полный комплект отчетов для ИФНС</a>
                   <p class="about-list__desc">Все отчеты одобрены инспекторами ФНС из&nbsp;разных регионов России</p>
                 </li>
                 <li class="about-list__item">
-                  <a class="about-list__link" href="#">Готовый шаблон запроса документов</a>
+                  <a class="about-list__link" href="#" id="template">Готовый шаблон запроса документов</a>
                   <p class="about-list__desc">Разработан экспертами Главбуха и&nbsp;формируется персонально под каждую компанию</p>
                 </li>
                 <li class="about-list__item">
-                  <a class="about-list__link" href="#">Налоговый режим и платежеспособность</a>
+                  <a class="about-list__link" href="#" id="tax">Налоговый режим и платежеспособность</a>
                   <p class="about-list__desc">
                     Сервис предупреждает, если есть налоговые долги и&nbsp;дает рекомендации, какие меры предпринять, чтобы снизить
                     бухгалтерские риски
                   </p>
                 </li>
                 <li class="about-list__item">
-                  <a class="about-list__link" href="#">Рейтинг налоговой</a>
+                  <a class="about-list__link" href="#" id="rating">Рейтинг налоговой</a>
                   <p class="about-list__desc">
                     Помогает выяснить в&nbsp;какой инспекции контрагент состоит на&nbsp;учете. На&nbsp;сколько она строго камералит,
                     назначает выездные проверок и&nbsp;как себя ведет в&nbsp;судах
                   </p>
                 </li>
                 <li class="about-list__item">
-                  <a class="about-list__link" href="#">Ресурсы и опыт</a>
+                  <a class="about-list__link" href="#" id="resources">Ресурсы и опыт</a>
                   <p class="about-list__desc">
                     Если сделка требует значительных ресурсов, а&nbsp;в&nbsp;компании 1&nbsp;сотрудник&nbsp;&mdash; повод для налоговой
                     проверки. Сервис предупреждает о&nbsp;риске и&nbsp;дает рекомендации, как себя обезопасить
                   </p>
                 </li>
                 <li class="about-list__item">
-                  <a class="about-list__link" href="#">Долги и споры</a>
+                  <a class="about-list__link" href="#" id="argument">Долги и споры</a>
                   <p class="about-list__desc">
                     Обращает внимание именно на&nbsp;те&nbsp;суды и&nbsp;исполнительные производства, которые влияют на&nbsp;работу
                     бухгалтера
                   </p>
                 </li>
                 <li class="about-list__item">
-                  <a class="about-list__link" href="#">Блокировки счетов</a>
+                  <a class="about-list__link" href="#" id="blocked">Блокировки счетов</a>
                   <p class="about-list__desc">
                     Сервис дает детализацию по&nbsp;количеству блокировок, банков, в&nbsp;которых счета заморожены и&nbsp;поясняет
                     в&nbsp;чем состоят риски.
@@ -234,49 +234,506 @@
           <button class="source__button" type="button">Посмотеть еще 29</button>
         </div>
       </section>
-      <!-- <section class="rate">
+      <section class="rate">
         <div class="container">
           <h2 class="rate__title title">Сколько стоит Главбух Конрагенты</h2>
           <table class="rate__table table" cellpadding="0" cellspacing="0">
             <tbody>
-              <tr class="table__row">
-                <td class="table__data table__data--head">
-                  <h3 class="table__data-title">Тариф на год</h3>
+              <tr class="table-row">
+                <td class="table-data table-data--head">
+                  <h3 class="table-data__head-title">Тариф на год</h3>
                 </td>
-                <td class="table__data data table__data--head">
-                  <p class="data__caption">0 ₽</p>
-                  <p class="data__new-price">Беслатно 24 часа</p>
+                <td class="table-data table-data--head">
+                  <p class="table-data__price">0 ₽</p>
+                  <p class="table-data__month">Беслатно 24 часа</p>
                 </td>
-                <td class="table__data data table__data--head">
-                  <p class="data__caption">22 900 ₽</p>
-                  <p class="data__new-price">12 месяцев</p>
+                <td class="table-data table-data--head">
+                  <p class="table-data__price">22 900 ₽</p>
+                  <p class="table-data__month">12 месяцев</p>
                 </td>
-                <td class="table__data data table__data--head">
-                  <p class="data__caption data__caption--vip">54 900 ₽</p>
-                  <p class="data__new-price">12 месяцев</p>
+                <td class="table-data table-data--head">
+                  <p class="table-data__price table-data__price--vip">54 900 ₽</p>
+                  <p class="table-data__month">12 месяцев</p>
                 </td>
               </tr>
-              <tr class="table__row">
-                <td class="table__data">
-                  <p class="table__data-program">
-                    <button class="table__data-button" type="button"></button>
-                  </p>
-                  <p class="table__data-dropdown"></p>
+              <tr class="table-row">
+                <td class="table-data__content data-content" colspan="4">
+                  <table class="table" cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td class="data-content__title">
+                          Основные сведения по&nbsp;контрагенту 
+                          <button class="data-content__button" type="button"></button>
+                        </td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle data-content__circle--green"></td>
+                      </tr>
+                      <tr>
+                        <td colspan="4">
+                          <p class="data-content__desc">В&nbsp;разделе &laquo;Основное&raquo; представлена основная информация о&nbsp;контрагенте. Она удобно сгруппирована по&nbsp;разделам: реквизиты, контакты, основной вид деятельности, управление, учредители, сведения о&nbsp;регистрации в&nbsp;фондах.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </td>
-                <td class="table__data">
-                  <div class="table__data-circle"></div>
+              </tr>
+              <tr class="table-row">
+                <td class="table-data__content data-content" colspan="4">
+                  <table class="table" cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td class="data-content__title">
+                          Запрос документов
+                          <button class="data-content__button" type="button"></button>
+                        </td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle data-content__circle--green"></td>
+                      </tr>
+                      <tr>
+                        <td colspan="4">
+                          <p class="data-content__desc">На&nbsp;основании анализа данных по&nbsp;контрагенту сервис сам сформирует список необходимых документов и&nbsp;предложит готовый текст запроса, который можно скопировать и&nbsp;отправить по&nbsp;электронной почте.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </td>
-                <td class="table__data">
-                  <div class="table__data-circle"></div>
+              </tr>
+              <tr class="table-row">
+                <td class="table-data__content data-content" colspan="4">
+                  <table class="table" cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td class="data-content__title">
+                          Отчеты для налоговой
+                          <button class="data-content__button" type="button"></button>
+                        </td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle data-content__circle--green"></td>
+                      </tr>
+                      <tr>
+                        <td colspan="4">
+                          <p class="data-content__desc">Сервис проверяет наличие признаков однодневки, платежеспособность, ресурсы, риск неисполнения сделки, деловую репутацию и&nbsp;активность за&nbsp;последний год. Именно эти признаки налоговики и&nbsp;суды признают значимыми доказательствами. Все отчеты в&nbsp;сервисе &laquo;Главбуха&raquo; подписаны ЭЦП и&nbsp;одобрены инспекторами.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </td>
-                <td class="table__data">
-                  <div class="table__data-circle table__data-circle--green"></div>
+              </tr>
+              <tr class="table-row">
+                <td class="table-data__content data-content" colspan="4">
+                  <table class="table" cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td class="data-content__title">
+                          Рекомендации эксперта журнала &laquo;Главбух&raquo;
+                          <button class="data-content__button" type="button"></button>
+                        </td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle data-content__circle--green"></td>
+                      </tr>
+                      <tr>
+                        <td colspan="4">
+                          <p class="data-content__desc">Эксперты журнала &laquo;Главбух&raquo; анализируют информацию по&nbsp;контрагенту и&nbsp;предлагают уже готовые выводы с&nbsp;правовым обоснованием. Советы экспертов помогают решить, работать&nbsp;ли с&nbsp;контрагентом, какие риски нужно предусмотреть и&nbsp;как их&nbsp;снизить, если у&nbsp;компании имеются негативные факторы.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-data__content data-content" colspan="4">
+                  <table class="table" cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td class="data-content__title">
+                          Мониторинг изменений
+                          <button class="data-content__button" type="button"></button>
+                        </td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle data-content__circle--green"></td>
+                      </tr>
+                      <tr>
+                        <td colspan="4">
+                          <p class="data-content__desc">Автоматическое отслеживание изменений в&nbsp;ЕГРЮЛ у&nbsp;контрагента помогает не&nbsp;пропустить ликвидацию, банкротство или смену статуса из-за присоединения к&nbsp;однодневке. На&nbsp;отслеживание можно поставить неограниченное количество компаний. Уведомления об&nbsp;изменениях приходят на&nbsp;электронную почту.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-data__content data-content" colspan="4">
+                  <table class="table" cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td class="data-content__title">
+                          Связанные компании
+                          <button class="data-content__button" type="button"></button>
+                        </td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle data-content__circle--green"></td>
+                      </tr>
+                      <tr>
+                        <td colspan="4">
+                          <p class="data-content__desc">Комплексное досье на&nbsp;ближайшее окружение контрагента. Наглядные схемы связей по&nbsp;руководителям, директорам и&nbsp;дочерним компаниям помогают быстро отследить связи с&nbsp;однодневкой.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-data__content data-content" colspan="4">
+                  <table class="table" cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td class="data-content__title">
+                          Проверки генпрокуратуры
+                          <button class="data-content__button" type="button"></button>
+                        </td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle data-content__circle--green"></td>
+                      </tr>
+                      <tr>
+                        <td colspan="4">
+                          <p class="data-content__desc">Сводные данные о&nbsp;прошедших и&nbsp;предстоящих плановых и&nbsp;внеплановых проверках: дата и&nbsp;время проведения проверки, место нахождение проверяемого объекта и&nbsp;ведомства, которое проводит проверку, отчет о&nbsp;нарушениях по&nbsp;прошедшим плановым и&nbsp;внеплановым проверкам.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-data__content data-content" colspan="4">
+                  <table class="table" cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td class="data-content__title">
+                          Финансы
+                          <button class="data-content__button" type="button"></button>
+                        </td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle data-content__circle--green"></td>
+                      </tr>
+                      <tr>
+                        <td colspan="4">
+                          <p class="data-content__desc">Развернутый финансовый анализ компании. Показатели ликвидности компании, её&nbsp;финансовой устойчивости и&nbsp;платёжеспособности. Можно отследить денежные потоки, налоговую нагрузку, соотношение собственных и&nbsp;заемных средств.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-data__content data-content" colspan="4">
+                  <table class="table" cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td class="data-content__title">
+                          Арбитраж
+                          <button class="data-content__button" type="button"></button>
+                        </td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle data-content__circle--green"></td>
+                      </tr>
+                      <tr>
+                        <td colspan="4">
+                          <p class="data-content__desc">Сводка по&nbsp;инстанциям и&nbsp;типам дел, в&nbsp;которых участвует контрагент как истец, ответчик или третья сторона, с&nbsp;указанием суммы спора и&nbsp;решением, которое вынес суд по&nbsp;спору.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-data__content data-content" colspan="4">
+                  <table class="table" cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td class="data-content__title">
+                          Исполнительные производства
+                          <button class="data-content__button" type="button"></button>
+                        </td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle data-content__circle--green"></td>
+                      </tr>
+                      <tr>
+                        <td colspan="4">
+                          <p class="data-content__desc">Сведения о&nbsp;том, какие взыскания наложили на&nbsp;контрагента. По&nbsp;каждому производству можно посмотреть: его номер и&nbsp;дату возбуждения, сумму, предмет, исполнительный документ и&nbsp;отдел судебных приставов.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-data__content data-content" colspan="4">
+                  <table class="table" cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td class="data-content__title">
+                          Лицензии
+                          <button class="data-content__button" type="button"></button>
+                        </td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle data-content__circle--green"></td>
+                      </tr>
+                      <tr>
+                        <td colspan="4">
+                          <p class="data-content__desc">В&nbsp;разделе представлены действующие лицензии, закончившиеся и&nbsp;просроченные. По&nbsp;каждой лицензии можно посмотреть ее&nbsp;наименование, номер, место и&nbsp;дату начала действия.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-data__content data-content" colspan="4">
+                  <table class="table" cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td class="data-content__title">
+                          Оценка рисков выездной налоговой проверки
+                          <button class="data-content__button" type="button"></button>
+                        </td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle data-content__circle--green"></td>
+                      </tr>
+                      <tr>
+                        <td colspan="4">
+                          <p class="data-content__desc">Калькулятор вероятности налоговой проверки в&nbsp;разрезе конкретной сделки по&nbsp;типу договора и&nbsp;сумме.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-data__content data-content" colspan="4">
+                  <table class="table" cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td class="data-content__title">
+                          Массовая проверка
+                          <button class="data-content__button" type="button"></button>
+                        </td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle data-content__circle--green"></td>
+                      </tr>
+                      <tr>
+                        <td colspan="4">
+                          <p class="data-content__desc">Экспресс-проверка с&nbsp;выводами по&nbsp;каждому контрагенту из&nbsp;приложений 8&nbsp;и&nbsp;9&nbsp;к декларации по&nbsp;НДС или книг продаж и&nbsp;покупок, выгруженных из&nbsp;любой учетной программы.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-data__content data-content" colspan="4">
+                  <table class="table" cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td class="data-content__title">
+                          Проверка договоров
+                          <button class="data-content__button" type="button"></button>
+                        </td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle data-content__circle--green"></td>
+                      </tr>
+                      <tr>
+                        <td colspan="4">
+                          <p class="data-content__desc">Экспрессанализ договора на&nbsp;предмет договорных рисков и&nbsp;сверяет реквизиты с&nbsp;данными в&nbsp;ЕГРЮЛ.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-data__content data-content" colspan="4">
+                  <table class="table" cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td class="data-content__title">
+                          Банковские блокировки
+                          <button class="data-content__button" type="button"></button>
+                        </td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle data-content__circle--green"></td>
+                      </tr>
+                      <tr>
+                        <td colspan="4">
+                          <p class="data-content__desc">&laquo;Главбух Контрагенты&raquo; показывает блокировки счетов от&nbsp;ФНС с&nbsp;детализацией</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-data__content data-content" colspan="4">
+                  <table class="table" cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td class="data-content__title">
+                          Выписка из&nbsp;ЕГРЮЛ
+                          <button class="data-content__button" type="button"></button>
+                        </td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle data-content__circle--green"></td>
+                      </tr>
+                      <tr>
+                        <td colspan="4">
+                          <p class="data-content__desc">Неограниченное количество скачиваний выписок по&nbsp;контрагентам с&nbsp;подписью ФНС</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-data__content data-content" colspan="4">
+                  <table class="table" cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td class="data-content__title">
+                          Выписка из&nbsp;ЕГРН
+                          <button class="data-content__button" type="button"></button>
+                        </td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle data-content__circle--green"></td>
+                      </tr>
+                      <tr>
+                        <td colspan="4">
+                          <p class="data-content__desc">Неограниченное количество выписок из&nbsp;ЕГРН о&nbsp;праве собственности и&nbsp;о&nbsp;переходе прав собственности по&nbsp;кадастровому номеру.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-data__content data-content" colspan="4">
+                  <table class="table" cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td class="data-content__title">
+                          Бухотчетность
+                          <button class="data-content__button" type="button"></button>
+                        </td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle data-content__circle--green"></td>
+                      </tr>
+                      <tr>
+                        <td colspan="4">
+                          <p class="data-content__desc">Неограниченное количество скачиваний годовой бухгалтерской отчетности за&nbsp;предыдущий отчетный период с&nbsp;подписью налоговой.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-data__content data-content" colspan="4">
+                  <table class="table" cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td class="data-content__title">
+                          Проверка паспорта
+                          <button class="data-content__button" type="button"></button>
+                        </td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle data-content__circle--green"></td>
+                      </tr>
+                      <tr>
+                        <td colspan="4">
+                          <p class="data-content__desc">Неограниченное количество проверок действительности паспортов по&nbsp;серии и&nbsp;номеру документа.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-data__content data-content" colspan="4">
+                  <table class="table" cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td class="data-content__title">
+                          Личный помощник главбуха
+                          <button class="data-content__button" type="button"></button>
+                        </td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle data-content__circle--green"></td>
+                      </tr>
+                      <tr>
+                        <td colspan="4">
+                          <p class="data-content__desc">Весь рабочий день с&nbsp;вами на&nbsp;связи живой человек&nbsp;&mdash; эксперт Электронной системы Главбух. Помогает вам с&nbsp;решением коротких бухгалтерских или налоговых вопросов, не&nbsp;требующих углубленного анализа. Возникла необходимость найти рекомендацию, нормативно-правовой документ, форму, образец заполнения и&nbsp;т.п.,&nbsp;&mdash; эксперт на&nbsp;связи. Отвечает на&nbsp;вопросы в&nbsp;режиме чата в&nbsp;течение 5-10&nbsp;минут.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-data__content data-content" colspan="4">
+                  <table class="table" cellpadding="0" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <td class="data-content__title">
+                          Экспертное заключение
+                          <button class="data-content__button" type="button"></button>
+                        </td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle data-content__circle--green"></td>
+                      </tr>
+                      <tr>
+                        <td colspan="4">
+                          <p class="data-content__desc">Неограниченное количеств хххххх текст будет уточняться</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td class="table-data table-data--button"></td>
+                <td class="table-data table-data--button">
+                  <a class="table-data__link" href="">Проробовать</a>
+                </td>
+                <td class="table-data table-data--button">
+                  <a class="table-data__link" href="">Купить</a>
+                </td>
+                <td class="table-data table-data--button">
+                  <a class="table-data__link table-data__link--green" href="">Купить</a>
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
-      </section> -->
+      </section>
       <section class="api">
         <div class="container">
           <div class="api__wrapper">
@@ -329,6 +786,104 @@
         </div>
       </div>
     </footer>
+    <section class="source-modal">
+      <div class="source-modal__wrapper">
+        <p class="source-modal__title">Еще 30 источников</p>
+        <button class="source-modal__button" type="button" aria-label="close popup"></button>
+        <ol class="source-modal__list">
+          <li class="source-modal__list-item">
+            <p class="source-modal__list-desc">Единый федеральный реестр сведений о&nbsp;банкротстве (Федресурс).</p>
+          </li>
+          <li class="source-modal__list-item">
+            <p class="source-modal__list-desc">Единый реестр проверок Генпрокуратуры РФ.</p>
+          </li>
+          <li class="source-modal__list-item">
+            <p class="source-modal__list-desc">Список недействительных российских паспортов из&nbsp;базы данных Главного Управления по&nbsp;вопросам миграции МВД РФ.</p>
+          </li>
+          <li class="source-modal__list-item">
+            <p class="source-modal__list-desc">Реестр бухгалтерской отчетности Росстата</p>
+          </li>
+          <li class="source-modal__list-item">
+            <p class="source-modal__list-desc">База данных Росстата по&nbsp;контактным данным организаций.</p>
+          </li>
+          <li class="source-modal__list-item">
+            <p class="source-modal__list-desc">Реестр дисквалифицированных лиц</p>
+          </li>
+          <li class="source-modal__list-item">
+            <p class="source-modal__list-desc">Реестр массовых учредителей</p>
+          </li>
+          <li class="source-modal__list-item">
+            <p class="source-modal__list-desc">Реестр массовых руководителей</p>
+          </li>
+          <li class="source-modal__list-item">
+            <p class="source-modal__list-desc">Реестр уведомлений о&nbsp;начале осуществления отдельных видов предпринимательской деятельности</p>
+          </li>
+          <li class="source-modal__list-item">
+            <p class="source-modal__list-desc">Реестр массовых адресов.</p>
+          </li>
+          <li class="source-modal__list-item">
+            <p class="source-modal__list-desc">Сведения о&nbsp;специальных налоговых режимах, применяемых налогоплательщиками.</p>
+          </li>
+          <li class="source-modal__list-item">
+            <p class="source-modal__list-desc">Сведения о&nbsp;среднесписочной численности работников организации.</p>
+          </li>
+          <li class="source-modal__list-item">
+            <p class="source-modal__list-desc">Сведения об&nbsp;уплаченных организацией в&nbsp;календарном году суммах налогов и&nbsp;сборов</p>
+          </li>
+          <li class="source-modal__list-item">
+            <p class="source-modal__list-desc">Информация о&nbsp;намерении контрагента провести реорганизацию или ликвидацию, сменить адрес или руководителя, уменьшить уставный капитал.</p>
+          </li>
+          <li class="source-modal__list-item">
+            <p class="source-modal__list-desc">Сведения о&nbsp;юридических лицах и&nbsp;индивидуальных предпринимателях, в&nbsp;отношении которых представлены документы для государственной регистрации</p>
+          </li>
+          <li class="source-modal__list-item">
+            <p class="source-modal__list-desc">Пени, штрафы и&nbsp;недоимки по&nbsp;налогам и&nbsp;сборам</p>
+          </li>
+          <li class="source-modal__list-item">
+            <p class="source-modal__list-desc">Реестр малого и&nbsp;среднего предпринимательства.</p>
+          </li>
+          <li class="source-modal__list-item">
+            <p class="source-modal__list-desc">Картотека арбитражного суда</p>
+          </li>
+          <li class="source-modal__list-item">
+            <p class="source-modal__list-desc">Реестр отозванных лицензий ЦБ&nbsp;РФ</p>
+          </li>
+          <li class="source-modal__list-item">
+            <p class="source-modal__list-desc">Намерение кредитора обратиться в&nbsp;суд с&nbsp;заявлением о&nbsp;банкротстве</p>
+          </li>
+          <li class="source-modal__list-item">
+            <p class="source-modal__list-desc">Сведения, опубликованные в&nbsp;журнале &laquo;Вестник государственной регистрации&raquo; о&nbsp;принятых регистрирующими органами решениях о&nbsp;предстоящем исключении недействующих юридических лиц из&nbsp;Единого государственного реестра юридических лиц</p>
+          </li>
+          <li class="source-modal__list-item">
+            <p class="source-modal__list-desc">Реестр Госзакупок gov.ru</p>
+          </li>
+          <li class="source-modal__list-item">
+            <p class="source-modal__list-desc">Реестр недобросовестных поставщиков.</p>
+          </li>
+          <li class="source-modal__list-item">
+            <p class="source-modal__list-desc">Реестр товарных знаков ФИПС</p>
+          </li>
+          <li class="source-modal__list-item">
+            <p class="source-modal__list-desc">Сводный план плановых проверок Роструда</p>
+          </li>
+          <li class="source-modal__list-item">
+            <p class="source-modal__list-desc">Государственный сводный реестр лицензий (Федеральной службы по&nbsp;регулированию алкогольного рынка).</p>
+          </li>
+          <li class="source-modal__list-item">
+            <p class="source-modal__list-desc">Реестр недвижимости</p>
+          </li>
+          <li class="source-modal__list-item">
+            <p class="source-modal__list-desc">Данные о&nbsp;налоговых долгах из&nbsp;ФНС</p>
+          </li>
+          <li class="source-modal__list-item">
+            <p class="source-modal__list-desc">Данные о&nbsp;лизингах из&nbsp;Федресурса</p>
+          </li>
+          <li class="source-modal__list-item">
+            <p class="source-modal__list-desc">Данные о&nbsp;залогах из&nbsp;Федресурса</p>
+          </li>
+        </ol>
+      </div>
+    </section>
     <section class="popup js-popup">
       <div class="popup__content">
         <button class="popup__button js-popup__button" type="button" aria-label="close popup"></button>

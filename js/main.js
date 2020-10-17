@@ -15,3 +15,18 @@ $('#situation').on('click', function () {
       'transform': 'translateY(-400px)'
   });
 })
+
+
+$('.data-content__button').on('click', function () {
+  $('.data-content__desc').hide();
+  $('.table-data__content').css({
+    'backgroundColor': 'inherit'
+  });
+
+  let dataContent = $(this).closest('.table-data__content');
+  
+    $(dataContent).find('.data-content__desc').show('325');
+    $(dataContent).css({
+      'background-color': '#ffffff'
+    })
+})
