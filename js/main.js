@@ -75,3 +75,72 @@ $('.data-content__button').on('click', function () {
       'background-color': '#ffffff'
     })
 })
+
+
+// spuce modal
+
+let htmlPage = document.querySelector('.html-page');
+let sourceBtn = document.querySelector('.source__button');
+let sourceModal = document.querySelector('.source-modal');
+let sourceModalBtn = document.querySelector('.source-modal__button');
+
+sourceBtn.onclick = function () {
+  sourceModal.classList.add('source-modal--active');
+  htmlPage.classList.add('source-modal--acttive')
+};
+sourceModalBtn.onclick = function() {
+  sourceModal.classList.remove('source-modal--active');
+  htmlPage.classList.remove('source-modal--acttive')
+}
+
+// 
+
+// slider
+
+let position = 0;
+const slidesToShow = 3;
+const slidesToScroll = 1;
+const container = $('.review__slider');
+const track = $('.review__slider-list');
+const item = $('.review-content');
+const btnPrev = $('.slider-control__button--left'); 
+const btnNext = $('.slider-control__button--right');
+const itemsCount = item.length;
+const itemWidth = item.width();
+const movePosition = slidesToScroll * itemWidth;
+
+item.each(function (index, item){
+  $(item).css({
+    minWidth: itemWidth
+  })
+})
+
+btnNext.click(function(){
+  position -= movePosition;
+  setPosition();
+  checkBtns();
+});
+
+btnPrev.click(function(){
+  position += movePosition;
+  setPosition();
+  checkBtns();
+});
+
+const setPosition = () => { 
+  track.css({
+    transform: `translateX(${position}px)`
+  });
+}
+
+const checkBtns = () => {
+  btnPrev.prop('disabled', position === itemWidth);
+  // console.log(position);
+  btnNext.prop(
+    'disabled',
+    position === -itemWidth
+  );
+
+  checkBtns();
+}
+
