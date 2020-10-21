@@ -22,13 +22,13 @@
             <img class="hero__header-logo" src="img/kantragenti-logo.svg" alt="Главбух Конрагенты" width="267" height="" />
             <ul class="hero__header-list">
               <li class="hero__header-item">
-                <a href="" class="hero__header-link">Возможности</a>
+                <a href="#feature" class="hero__header-link">Возможности</a>
               </li>
               <li class="hero__header-item">
-                <a href="" class="hero__header-link">Тарифы</a>
+                <a href="#rate" class="hero__header-link">Тарифы</a>
               </li>
               <li class="hero__header-item">
-                <a href="" class="hero__header-link">Заказать звонок</a>
+                <a href="#preorder" class="hero__header-link">Заказать звонок</a>
               </li>
             </ul>
           </div>
@@ -60,7 +60,7 @@
           <div class="about__content">
             <div class="about__content-left">
               <ul class="about__content-list about-list">
-                <li class="about-list__item">
+                <li class="about-list__item active">
                   <a class="about-list__link" href="#" id="risk">Оценка уровня бухгалтерских рисков</a>
                   <p class="about-list__desc">Рекомендации на&nbsp;какие показатели следует обратить особое внимание бухгалтеру</p>
                 </li>
@@ -108,7 +108,7 @@
                   </p>
                 </li>
               </ul>
-              <a class="about__content-button button-blue" href="">Активировать доступ</a>
+              <a class="about__content-button button-blue" href="https://glavbukh.1cont.ru/demo" target="_blank">Активировать доступ</a>
             </div>
             <div class="about__content-right">
               <div class="about__content-picture">
@@ -118,7 +118,7 @@
           </div>
         </div>
       </section>
-      <section class="feature">
+      <section class="feature" id="feature">
         <div class="container">
           <h2 class="feature__title title">Специально для бухгалтера</h2>
           <ul class="feature__list">
@@ -135,7 +135,7 @@
                 Полный комплект отчетов отвечающих всем требованиям статьи 54.1&nbsp;НК и&nbsp;письмам с&nbsp;разъяснениям
                 по&nbsp;осмотрительности от&nbsp;ФНС
               </p>
-              <a class="feature__elem-link" data-fancybox='feature_gallery' data-src="#finanaliz" href="javascript:;">Подробнее</a>
+              <a class="feature__elem-link" data-fancybox='feature_gallery' data-src="#otcheti" href="javascript:;">Подробнее</a>
             </li>
             <li class="feature__elem">
               <h3 class="feature__elem-title">Финансовый анализ</h3>
@@ -143,19 +143,19 @@
                 Подробный анализ финансового состояния компании и&nbsp;сравнение со&nbsp;средними показателями по&nbsp;отрасли
                 и&nbsp;региону
               </p>
-              <a class="feature__elem-link" data-fancybox='feature_gallery' data-src="#izmeneniya" href="javascript:;">Подробнее</a>
+              <a class="feature__elem-link" data-fancybox='feature_gallery' data-src="#finanaliz" href="javascript:;">Подробнее</a>
             </li>
             <li class="feature__elem">
               <h3 class="feature__elem-title">Связи. Проверка аффилированности компаний</h3>
               <p class="feature__elem-desc">Сервис предупреждает если в связанных компаниях есть технические или однодневки</p>
-              <a class="feature__elem-link" data-fancybox='feature_gallery' data-src="#otcheti" href="javascript:;">Подробнее</a>
+              <a class="feature__elem-link" data-fancybox='feature_gallery' data-src="#affilirovannost" href="javascript:;">Подробнее</a>
             </li>
             <li class="feature__elem">
               <h3 class="feature__elem-title">Мониторинг изменений</h3>
               <p class="feature__elem-desc">
                 Автоматическое отслеживание изменений в&nbsp;ЕГРЮЛ и&nbsp;судах с&nbsp;уведомление по&nbsp;электронной почте
               </p>
-              <a class="feature__elem-link" data-fancybox='feature_gallery' data-src="#affilirovannost" href="javascript:;">Подробнее</a>
+              <a class="feature__elem-link" data-fancybox='feature_gallery' data-src="#izmeneniya" href="javascript:;">Подробнее</a>
             </li>
             <li class="feature__elem">
               <h3 class="feature__elem-title">Проверка договоров</h3>
@@ -203,7 +203,7 @@
               </ul>
             </li>
           </ul>
-          <a class="helper__button button-blue" href="">Активировать доступ</a>
+          <a class="helper__button button-blue" href="https://glavbukh.1cont.ru/demo" target="_blank">Активировать доступ</a>
         </div>
       </section>
       <section class="source">
@@ -231,10 +231,10 @@
               <p class="source__item-desc">Реестр исполнительных производств <span>Федеральной службы судебных</span> приставов</p>
             </li>
           </ul>
-          <button class="source__button" type="button">Посмотеть еще 29</button>
+          <button class="source__button" type="button">Посмотеть еще 30</button>
         </div>
       </section>
-      <section class="rate">
+      <section class="rate" id="rate">
         <div class="container">
           <h2 class="rate__title title">Сколько стоит Главбух Конрагенты</h2>
           <table class="rate__table table" cellpadding="0" cellspacing="0">
@@ -683,8 +683,8 @@
                           Личный помощник главбуха
                           <button class="data-content__button" type="button"></button>
                         </td>
-                        <td class="data-content__circle"></td>
-                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle data-content__circle--basic"></td>
+                        <td class="data-content__circle data-content__circle--basic"></td>
                         <td class="data-content__circle data-content__circle--green"></td>
                       </tr>
                       <tr>
@@ -705,8 +705,8 @@
                           Экспертное заключение
                           <button class="data-content__button" type="button"></button>
                         </td>
-                        <td class="data-content__circle"></td>
-                        <td class="data-content__circle"></td>
+                        <td class="data-content__circle data-content__circle--basic"></td>
+                        <td class="data-content__circle data-content__circle--basic"></td>
                         <td class="data-content__circle data-content__circle--green"></td>
                       </tr>
                       <tr>
@@ -721,13 +721,13 @@
               <tr class="table-row">
                 <td class="table-data table-data--button"></td>
                 <td class="table-data table-data--button">
-                  <a class="table-data__link" href="">Проробовать</a>
+                  <a class="table-data__link" href="https://glavbukh.1cont.ru/demo" target="_blank">Проробовать</a>
                 </td>
                 <td class="table-data table-data--button">
-                  <a class="table-data__link" href="">Купить</a>
+                  <a class="table-data__link" href="https://new.bill.glavbukh.ru/bill/1409_4_12/a_cont_12_baz_promo.html?from=1cont.glavbukh.ru&utm_source=1cont.glavbukh.ru&utm_medium=refer&utm_campaign=promo_page&utm_term=button&btx=2028072" target="_blank">Купить</a>
                 </td>
                 <td class="table-data table-data--button">
-                  <a class="table-data__link table-data__link--green" href="">Купить</a>
+                  <a class="table-data__link table-data__link--green" href="https://new.bill.glavbukh.ru/bill/1409_4_12/a_cont_12_pro.html?from=1cont.glavbukh.ru&utm_source=1cont.glavbukh.ru&utm_medium=refer&utm_campaign=promo_page&utm_term=button&btx=2028072" target="_blank">Купить</a>
                 </td>
               </tr>
             </tbody>
@@ -820,7 +820,7 @@
           </div>
         </div>
       </section>
-      <section class="preorder">
+      <section class="preorder" id="preorder">
         <div class="container">
           <h2 class="preorder__title title">Проверьте контрагентов по методике ФНС бесплатно</h2>
           <form action="" class="preorder__form">
@@ -956,7 +956,7 @@
             <p class="source-modal__list-desc">Данные о&nbsp;залогах из&nbsp;Федресурса</p>
           </li>
         </ol>
-        <a class="source-modal__link" href="">Заказать презентацию</a>
+        <a class="source-modal__link" href="#preorder">Заказать презентацию</a>
       </div>
     </section>
     <section class="feature-modal">
@@ -978,54 +978,8 @@
               </div>
             </div>
             <div class="feature-modal__button">
-              <button class="feature-modal__button-link">Проверить договор</button>
-              <button class="feature-modal__button-link">Заказать презентацию</button>
-            </div>
-          </li>
-          <li class="feature-modal__item" id="finanaliz">
-            <h2 class="feature-modal__title title">Финансовый анализ</h2>
-            <p class="feature-modal__desc">
-              Развернутый анализ финансового состояния компании с возможностью скачать бухотчетность за последний отчетный период с печатью ФНС
-            </p>
-            <div class="feature-modal__content">
-              <div class="feature-modal__content-wrapper">
-                <p class="feature-modal__content-desc">
-                  ФНС ежегодно рассчитывает рентабельность по отраслям в каждом регионе. Если показатели компании имеют отклонение более 10%, налоговая начинает камеральную проверку. Сервис анализирует финансовые показателе по той же методике
-                </p>
-              </div>
-              <div class="feature-modal__content-pic">
-                <img class="feature-modal__content-image" src="img/modal-content/massovaya_proverka.png" alt="">
-              </div>
-            </div>
-            <div class="feature-modal__button">
-              <button class="feature-modal__button-link">Провести финанализ по ИНН</button>
-              <button class="feature-modal__button-link">Заказать презентацию</button>
-            </div>
-          </li>
-          <li class="feature-modal__item" id="izmeneniya">
-            <h2 class="feature-modal__title title">Контрагенты на контроле</h2>
-            <p class="feature-modal__desc">
-              Сервис позволяет поставить на отслеживание неограниченное количество контрагентов и вовремя реагировать на банкротство, отметки о недостоверных данных и другие факторы риска
-            </p>
-            <div class="feature-modal__content">
-              <div class="feature-modal__content-wrapper">
-                <p class="feature-modal__content-desc">
-                  Это ваш персональный шпион, который 24 часа в сутки следит за контрагентами. О самых важных изменениях предупреждает по электронной почте:
-                </p>
-                <ul class="feature-modal__content-list">
-                  <li class="feature-modal__content-item">Смена уровня риска</li>
-                  <li class="feature-modal__content-item">Смена руководителя или учредителей</li>
-                  <li class="feature-modal__content-item">Появление «черных меток» и другие изменения в ЕГРЮЛ</li>
-                  <li class="feature-modal__content-item">Появление новых судов, в том числе и банкротных</li>
-                </ul>
-              </div>
-              <div class="feature-modal__content-pic">
-                <img class="feature-modal__content-image" src="img/modal-content/izmeneniya.png" alt="">
-              </div>
-            </div>
-            <div class="feature-modal__button">
-              <button class="feature-modal__button-link">Проверить договор</button>
-              <button class="feature-modal__button-link">Заказать презентацию</button>
+              <a class="feature-modal__button-link" href="https://glavbukh.1cont.ru/demo">Проверить договор</a>
+              <a class="feature-modal__button-link feature-modal__button-link--transparent" href="#preorder">Заказать презентацию</a>
             </div>
           </li>
           <li class="feature-modal__item" id="otcheti">
@@ -1051,8 +1005,28 @@
               </div>
             </div>
             <div class="feature-modal__button">
-              <button class="feature-modal__button-link">Проверить договор</button>
-              <button class="feature-modal__button-link">Заказать презентацию</button>
+              <a class="feature-modal__button-link" href="https://glavbukh.1cont.ru/demo">Скачать отчеты по ИНН</a>
+              <a class="feature-modal__button-link feature-modal__button-link--transparent" href="#preorder">Заказать презентацию</a>
+            </div>
+          </li>
+          <li class="feature-modal__item" id="finanaliz">
+            <h2 class="feature-modal__title title">Финансовый анализ</h2>
+            <p class="feature-modal__desc">
+              Развернутый анализ финансового состояния компании с возможностью скачать бухотчетность за последний отчетный период с печатью ФНС
+            </p>
+            <div class="feature-modal__content">
+              <div class="feature-modal__content-wrapper">
+                <p class="feature-modal__content-desc">
+                  ФНС ежегодно рассчитывает рентабельность по отраслям в каждом регионе. Если показатели компании имеют отклонение более 10%, налоговая начинает камеральную проверку. Сервис анализирует финансовые показателе по той же методике
+                </p>
+              </div>
+              <div class="feature-modal__content-pic">
+                <img class="feature-modal__content-image" src="img/modal-content/fin-analiz.png" alt="">
+              </div>
+            </div>
+            <div class="feature-modal__button">
+              <a class="feature-modal__button-link" href="https://glavbukh.1cont.ru/demo">Провести финанализ по ИНН</a>
+              <a class="feature-modal__button-link feature-modal__button-link--transparent" href="#preorder">Заказать презентацию</a>
             </div>
           </li>
           <li class="feature-modal__item" id="affilirovannost">
@@ -1071,12 +1045,38 @@
               </div>
             </div>
             <div class="feature-modal__button">
-              <button class="feature-modal__button-link">Проверить договор</button>
-              <button class="feature-modal__button-link">Заказать презентацию</button>
+              <a class="feature-modal__button-link" href="https://glavbukh.1cont.ru/demo">Прверить связи по ИНН</a>
+              <a class="feature-modal__button-link feature-modal__button-link--transparent" href="#preorder">Заказать презентацию</a>
+            </div>
+          </li>
+          <li class="feature-modal__item" id="izmeneniya">
+            <h2 class="feature-modal__title title">Контрагенты на контроле</h2>
+            <p class="feature-modal__desc">
+              Сервис позволяет поставить на отслеживание неограниченное количество контрагентов и вовремя реагировать на банкротство, отметки о недостоверных данных и другие факторы риска
+            </p>
+            <div class="feature-modal__content">
+              <div class="feature-modal__content-wrapper">
+                <p class="feature-modal__content-desc">
+                  Это ваш персональный шпион, который 24 часа в сутки следит за контрагентами. О самых важных изменениях предупреждает по электронной почте:
+                </p>
+                <ul class="feature-modal__content-list">
+                  <li class="feature-modal__content-item">Смена уровня риска</li>
+                  <li class="feature-modal__content-item">Смена руководителя или учредителей</li>
+                  <li class="feature-modal__content-item">Появление «черных меток» и другие изменения в ЕГРЮЛ</li>
+                  <li class="feature-modal__content-item">Появление новых судов, в том числе и банкротных</li>
+                </ul>
+              </div>
+              <div class="feature-modal__content-pic">
+                <img class="feature-modal__content-image" src="img/modal-content/izmeneniya.png" alt="">
+              </div>
+            </div>
+            <div class="feature-modal__button">
+              <a class="feature-modal__button-link" href="https://glavbukh.1cont.ru/demo">Отслеживать контрагентов</a>
+              <a class="feature-modal__button-link feature-modal__button-link--transparent" href="#preorder">Заказать презентацию</a>
             </div>
           </li>
           <li class="feature-modal__item" id="ocenkaDogovorov">
-            <h2 class="feature-modal__title title">Контрагенты на контроле</h2>
+            <h2 class="feature-modal__title title">Проверка договоров</h2>
             <p class="feature-modal__desc">
               Сервис позволяет существенно сократить время на проверку договора. Сам сверит реквизиты с ЕГРЮЛ, разметит договор для облегчения чтения, выделит опасные пункты и предупредит об отсутствии существенных условий. Все проверенные договоры хранятся в сервисе и их можно скачать в любой момент
             </p>
@@ -1097,8 +1097,8 @@
               </div>
             </div>
             <div class="feature-modal__button">
-              <button class="feature-modal__button-link">Проверить договор</button>
-              <button class="feature-modal__button-link">Заказать презентацию</button>
+              <a class="feature-modal__button-link" href="https://glavbukh.1cont.ru/demo">Проверить договор</a>
+              <a class="feature-modal__button-link feature-modal__button-link--transparent" href="#preorder">Заказать презентацию</a>
             </div>
           </li>
         </ul>

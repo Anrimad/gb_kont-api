@@ -93,12 +93,17 @@ let htmlPage = document.querySelector('.html-page');
 let sourceBtn = document.querySelector('.source__button');
 let sourceModal = document.querySelector('.source-modal');
 let sourceModalBtn = document.querySelector('.source-modal__button');
+let sourceModalLnk = document.querySelector('.source-modal__link');
 
 sourceBtn.onclick = function () {
   sourceModal.classList.add('source-modal--active');
   htmlPage.classList.add('source-modal--acttive')
 };
 sourceModalBtn.onclick = function() {
+  sourceModal.classList.remove('source-modal--active');
+  htmlPage.classList.remove('source-modal--acttive')
+}
+sourceModalLnk.onclick = function() {
   sourceModal.classList.remove('source-modal--active');
   htmlPage.classList.remove('source-modal--acttive')
 }

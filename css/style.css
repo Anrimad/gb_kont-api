@@ -101,7 +101,10 @@ input[type="radio"].visually-hidden {
   line-height: 0;
   color: #ffffff;
   background-color: #0085ef;
-  border-radius: 3px; }
+  border-radius: 3px;
+  transition: 0.2s; }
+  .button-blue:hover {
+    background-color: #0276D2; }
 
 body.compensate-for-scrollbar {
   overflow: hidden; }
@@ -866,7 +869,11 @@ body.compensate-for-scrollbar {
   font-size: 18px;
   font-weight: 600;
   line-height: 28px;
-  color: #6E7992; }
+  color: #6E7992;
+  transition: 0.2s;
+  outline: none; }
+  .hero__header-link:hover, .hero__header-link:focus {
+    color: #474d5e; }
 
 .hero__content {
   position: relative;
@@ -954,7 +961,10 @@ body.compensate-for-scrollbar {
   border: none;
   border-radius: 3px;
   cursor: pointer;
-  outline: none; }
+  outline: none;
+  transition: 0.2s; }
+  .hero__form-button:hover {
+    background-color: #00792A; }
 
 .about {
   padding-top: 48px; }
@@ -1026,7 +1036,10 @@ body.compensate-for-scrollbar {
   font-size: 20px;
   font-weight: 600;
   line-height: 28px;
-  color: #079939; }
+  color: #079939;
+  outline: none; }
+  .about-list__link:hover, .about-list__link:active, .about-list__link:focus {
+    color: #0cb947; }
 
 .about-list__desc {
   width: 425px;
@@ -1039,7 +1052,8 @@ body.compensate-for-scrollbar {
   margin-bottom: 25px; }
 
 .about__content-image {
-  transition: 0.5s; }
+  transition: 0.5s;
+  transform: translateY(-40px); }
 
 .feature {
   padding-top: 86px; }
@@ -1259,7 +1273,12 @@ body.compensate-for-scrollbar {
   border: 1px solid #6E7992;
   border-radius: 3px;
   cursor: pointer;
-  outline: none; }
+  outline: none;
+  transition: 0.2s; }
+  .source__button:hover {
+    color: #ffffff;
+    background-color: rgba(110, 121, 146, 0.52);
+    border: 0; }
 
 .rate {
   margin-top: 77px;
@@ -1338,6 +1357,8 @@ td {
     border-radius: 50%; }
   .data-content__circle--green::before {
     background-color: #079939; }
+  .data-content__circle--basic {
+    opacity: 0; }
 
 .data-content__desc {
   width: 707px;
@@ -1371,9 +1392,14 @@ td {
   text-align: center;
   color: #fff;
   background-color: #474d5e;
-  border-radius: 3px; }
+  border-radius: 3px;
+  transition: 0.2s; }
+  .table-data__link:hover {
+    background-color: #333846; }
   .table-data__link--green {
     background-color: #079939; }
+    .table-data__link--green:hover {
+      background-color: #00792A; }
 
 .api {
   padding-top: 90px;
@@ -1458,7 +1484,8 @@ td {
   justify-content: space-between;
   width: 1110px;
   height: 100px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  z-index: 99; }
 
 .slider-control__button {
   position: relative;
@@ -1615,7 +1642,10 @@ td {
   border: none;
   border-radius: 3px;
   position: relative;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: 0.2s; }
+  .preorder__button:hover {
+    background-color: #00792A; }
 
 .footer {
   background-color: #f7f7f4; }
@@ -1780,18 +1810,21 @@ td {
   align-items: center;
   justify-content: center;
   width: 535px;
-  height: 60px;
-  margin: 55px auto 0;
+  min-height: 60px;
+  margin: 30px auto 0;
   font-size: 21px;
   line-height: 26px;
   color: #ffffff;
   background-color: #0085ef;
-  border-radius: 3px; }
+  border-radius: 3px;
+  transition: 0.2s; }
+  .source-modal__link:hover {
+    background-color: #0276D2; }
 
 .feature-modal__item {
   flex-direction: column;
   width: 977px;
-  height: 707px;
+  height: 680px;
   padding: 26px 26px 0 26px;
   background-color: #ffffff;
   border-radius: 3px;
@@ -1853,15 +1886,37 @@ td {
   border-bottom: 0;
   border-radius: 3px; }
   .feature-modal__content-pic--center {
+    height: 360px;
     align-items: center; }
 
 .feature-modal__button {
   margin: 0 -26px;
   padding: 23px;
   display: flex;
-  justify-content: center;
   background-color: #F7F7F4;
   border-top: 1px solid #e6e6e6; }
 
 .feature-modal__button-link {
-  height: 60px; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 369px;
+  height: 60px;
+  margin: 0 9px 0 auto;
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  border-radius: 3px;
+  background-color: #0085ef;
+  transition: 0.2s; }
+  .feature-modal__button-link:hover {
+    background-color: #0276D2; }
+  .feature-modal__button-link--transparent {
+    margin: 0 auto 0 9px;
+    background-color: transparent;
+    color: #0085ef;
+    border: 1px solid #0085ef; }
+    .feature-modal__button-link--transparent:hover {
+      color: #ffffff;
+      background-color: rgba(0, 133, 239, 0.57);
+      border: none; }
