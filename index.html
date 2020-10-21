@@ -127,7 +127,7 @@
               <p class="feature__elem-desc">
                 Сервис мгновенно проверяет всех контрагентов из&nbsp;декларации по&nbsp;НДС и&nbsp;предупреждает об&nbsp;опасных
               </p>
-              <a class="feature__elem-link" href="">Подробнее</a>
+              <a class="feature__elem-link" data-fancybox='feature_gallery' data-src="#proverka" href="javascript:;">Подробнее</a>
             </li>
             <li class="feature__elem">
               <h3 class="feature__elem-title">Отчеты для ИФНС</h3>
@@ -135,7 +135,7 @@
                 Полный комплект отчетов отвечающих всем требованиям статьи 54.1&nbsp;НК и&nbsp;письмам с&nbsp;разъяснениям
                 по&nbsp;осмотрительности от&nbsp;ФНС
               </p>
-              <a class="feature__elem-link" href="">Подробнее</a>
+              <a class="feature__elem-link" data-fancybox='feature_gallery' data-src="#finanaliz" href="javascript:;">Подробнее</a>
             </li>
             <li class="feature__elem">
               <h3 class="feature__elem-title">Финансовый анализ</h3>
@@ -143,24 +143,24 @@
                 Подробный анализ финансового состояния компании и&nbsp;сравнение со&nbsp;средними показателями по&nbsp;отрасли
                 и&nbsp;региону
               </p>
-              <a class="feature__elem-link" href="">Подробнее</a>
+              <a class="feature__elem-link" data-fancybox='feature_gallery' data-src="#izmeneniya" href="javascript:;">Подробнее</a>
             </li>
             <li class="feature__elem">
               <h3 class="feature__elem-title">Связи. Проверка аффилированности компаний</h3>
               <p class="feature__elem-desc">Сервис предупреждает если в связанных компаниях есть технические или однодневки</p>
-              <a class="feature__elem-link" href="">Подробнее</a>
+              <a class="feature__elem-link" data-fancybox='feature_gallery' data-src="#otcheti" href="javascript:;">Подробнее</a>
             </li>
             <li class="feature__elem">
               <h3 class="feature__elem-title">Мониторинг изменений</h3>
               <p class="feature__elem-desc">
                 Автоматическое отслеживание изменений в&nbsp;ЕГРЮЛ и&nbsp;судах с&nbsp;уведомление по&nbsp;электронной почте
               </p>
-              <a class="feature__elem-link" href="">Подробнее</a>
+              <a class="feature__elem-link" data-fancybox='feature_gallery' data-src="#affilirovannost" href="javascript:;">Подробнее</a>
             </li>
             <li class="feature__elem">
               <h3 class="feature__elem-title">Проверка договоров</h3>
               <p class="feature__elem-desc">Сервис оценивает договорные риски и&nbsp;сверяет реквизиты с&nbsp;данными в&nbsp;ЕГРЮЛ</p>
-              <a class="feature__elem-link" href="">Подробнее</a>
+              <a class="feature__elem-link" data-fancybox='feature_gallery' data-src="#ocenkaDogovorov" href="javascript:;">Подробнее</a>
             </li>
           </ul>
         </div>
@@ -771,7 +771,7 @@
                 <img class="review-content__user-pohoto" src="img/user/besschetnova.png" alt="Ирина Бессчетнова" width="286" height="463">
               </div>
             </li>
-            <li class="review-content current">     
+            <li class="review-content">     
               <div class="review-content__user-data">
                 <p class="review-content__user-name">
                   Наталья Захарова
@@ -959,10 +959,149 @@
         <a class="source-modal__link" href="">Заказать презентацию</a>
       </div>
     </section>
-    <section class="popup js-popup">
-      <div class="popup__content">
-        <button class="popup__button js-popup__button" type="button" aria-label="close popup"></button>
-        <p class="popup__text"></p>
+    <section class="feature-modal">
+      <div class="feature-modal__wrapper">
+        <ul class="feature-modal__list">
+          <li class="feature-modal__item" id="proverka">
+            <h2 class="feature-modal__title title">Массовая проверка</h2>
+            <p class="feature-modal__desc">
+              Сервис «Главбух Контрагенты» мгновенно анализирует всех контрагентов из декларации делает сводный анализ и предупреждает о наличии  налоговыми рисками
+            </p>
+            <div class="feature-modal__content">
+              <div class="feature-modal__content-wrapper">
+                <p class="feature-modal__content-desc">
+                  Достаточно перетащить в сервис книгу продаж и книгу покупок или приложения 8 и 9 из декларации и сервис мгновенно проверит каждого контрагента, опасных поднимет вверх списка. Далее, по каждой из опасных организаций вы сможете перейти в карточку и прочитать рекомендации эксперта. Он подскажет, какие опасные факторы есть и какими документами себя обезопасить. А еще сервис предложит поставить всех контрагентов из декларации на контроль одной кнопкой
+                </p>
+              </div>
+              <div class="feature-modal__content-pic">
+                <img class="feature-modal__content-image" src="img/modal-content/massovaya_proverka.png" alt="">
+              </div>
+            </div>
+            <div class="feature-modal__button">
+              <button class="feature-modal__button-link">Проверить договор</button>
+              <button class="feature-modal__button-link">Заказать презентацию</button>
+            </div>
+          </li>
+          <li class="feature-modal__item" id="finanaliz">
+            <h2 class="feature-modal__title title">Финансовый анализ</h2>
+            <p class="feature-modal__desc">
+              Развернутый анализ финансового состояния компании с возможностью скачать бухотчетность за последний отчетный период с печатью ФНС
+            </p>
+            <div class="feature-modal__content">
+              <div class="feature-modal__content-wrapper">
+                <p class="feature-modal__content-desc">
+                  ФНС ежегодно рассчитывает рентабельность по отраслям в каждом регионе. Если показатели компании имеют отклонение более 10%, налоговая начинает камеральную проверку. Сервис анализирует финансовые показателе по той же методике
+                </p>
+              </div>
+              <div class="feature-modal__content-pic">
+                <img class="feature-modal__content-image" src="img/modal-content/massovaya_proverka.png" alt="">
+              </div>
+            </div>
+            <div class="feature-modal__button">
+              <button class="feature-modal__button-link">Провести финанализ по ИНН</button>
+              <button class="feature-modal__button-link">Заказать презентацию</button>
+            </div>
+          </li>
+          <li class="feature-modal__item" id="izmeneniya">
+            <h2 class="feature-modal__title title">Контрагенты на контроле</h2>
+            <p class="feature-modal__desc">
+              Сервис позволяет поставить на отслеживание неограниченное количество контрагентов и вовремя реагировать на банкротство, отметки о недостоверных данных и другие факторы риска
+            </p>
+            <div class="feature-modal__content">
+              <div class="feature-modal__content-wrapper">
+                <p class="feature-modal__content-desc">
+                  Это ваш персональный шпион, который 24 часа в сутки следит за контрагентами. О самых важных изменениях предупреждает по электронной почте:
+                </p>
+                <ul class="feature-modal__content-list">
+                  <li class="feature-modal__content-item">Смена уровня риска</li>
+                  <li class="feature-modal__content-item">Смена руководителя или учредителей</li>
+                  <li class="feature-modal__content-item">Появление «черных меток» и другие изменения в ЕГРЮЛ</li>
+                  <li class="feature-modal__content-item">Появление новых судов, в том числе и банкротных</li>
+                </ul>
+              </div>
+              <div class="feature-modal__content-pic">
+                <img class="feature-modal__content-image" src="img/modal-content/izmeneniya.png" alt="">
+              </div>
+            </div>
+            <div class="feature-modal__button">
+              <button class="feature-modal__button-link">Проверить договор</button>
+              <button class="feature-modal__button-link">Заказать презентацию</button>
+            </div>
+          </li>
+          <li class="feature-modal__item" id="otcheti">
+            <h2 class="feature-modal__title title">Готовые отчеты по контрагентам для налоговой</h2>
+            <p class="feature-modal__desc">
+              Каждый отчет защищен электронной подписью и является юридически значимым документом, который принимают как налоговики, так и суды. Все данные имеют ссылку на первоисточник. Отчеты соответствуют всем требованиям статьи 54.1 НК и письмам с разъяснениям от ФНС.
+            </p>
+            <div class="feature-modal__content">
+              <div class="feature-modal__content-wrapper">
+                <p class="feature-modal__content-desc">
+                  Скачивайте отчеты по осмотрительности перед заключением сделки. Это ваша защита от субсидиарной ответственности и претензий налоговиков из-за статьи 54.1 НК РФ:
+                </p>
+                <ul class="feature-modal__content-list">
+                  <li class="feature-modal__content-item">Отчет о соблюдении требований ФНС</li>
+                  <li class="feature-modal__content-item">Общий отчет</li>
+                  <li class="feature-modal__content-item">Детали проверки</li>
+                  <li class="feature-modal__content-item">По результатам выбора контрагента</li>
+                  <li class="feature-modal__content-item">Отчет о подтверждении реальности сделки</li>
+                </ul>
+              </div>
+              <div class="feature-modal__content-pic">
+                <img class="feature-modal__content-image" src="img/modal-content/otcheti.png" alt="">
+              </div>
+            </div>
+            <div class="feature-modal__button">
+              <button class="feature-modal__button-link">Проверить договор</button>
+              <button class="feature-modal__button-link">Заказать презентацию</button>
+            </div>
+          </li>
+          <li class="feature-modal__item" id="affilirovannost">
+            <h2 class="feature-modal__title title">Проверка аффилированности</h2>
+            <p class="feature-modal__desc">
+              Сервис проверяет все компании связанные с контрагентам через учредителей и руководителей. Предупреждает если есть опасные, из-за которых к вам могут прийти с проверкой по цепочке
+            </p>
+            <div class="feature-modal__content">
+              <div class="feature-modal__content-wrapper">
+                <p class="feature-modal__content-desc">
+                  Сервис выделяет контрагентов с высокими налоговыми рисками и выстраивает по ним цепочку связей 
+                </p>
+              </div>
+              <div class="feature-modal__content-pic">
+                <img class="feature-modal__content-image" src="img/modal-content/proverka_affilirovannosti.png" alt="">
+              </div>
+            </div>
+            <div class="feature-modal__button">
+              <button class="feature-modal__button-link">Проверить договор</button>
+              <button class="feature-modal__button-link">Заказать презентацию</button>
+            </div>
+          </li>
+          <li class="feature-modal__item" id="ocenkaDogovorov">
+            <h2 class="feature-modal__title title">Контрагенты на контроле</h2>
+            <p class="feature-modal__desc">
+              Сервис позволяет существенно сократить время на проверку договора. Сам сверит реквизиты с ЕГРЮЛ, разметит договор для облегчения чтения, выделит опасные пункты и предупредит об отсутствии существенных условий. Все проверенные договоры хранятся в сервисе и их можно скачать в любой момент
+            </p>
+            <div class="feature-modal__content">
+              <div class="feature-modal__content-wrapper">
+                <p class="feature-modal__content-desc">
+                  Сервис помогает:
+                </p>
+                <ul class="feature-modal__content-list">
+                  <li class="feature-modal__content-item">Оценить уровень риска договора</li>
+                  <li class="feature-modal__content-item">Обнаружить спорные и невыгодные условия</li>
+                  <li class="feature-modal__content-item">Проверить наличие всех существенных условий</li>
+                  <li class="feature-modal__content-item">Сверить реквизиты с ЕГРЮЛ</li>
+                </ul>
+              </div>
+              <div class="feature-modal__content-pic feature-modal__content-pic--center">
+                <img class="feature-modal__content-image" src="img/modal-content/ocenka_dogovorov.png" alt="">
+              </div>
+            </div>
+            <div class="feature-modal__button">
+              <button class="feature-modal__button-link">Проверить договор</button>
+              <button class="feature-modal__button-link">Заказать презентацию</button>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
     <script
@@ -970,6 +1109,7 @@
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
-    <script src="js/main.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -77,7 +77,17 @@ $('.data-content__button').on('click', function () {
 })
 
 
-// spuce modal
+// feature-modal
+
+
+$().fancybox({
+  selector : '[data-fancybox="feature_gallery"]',
+  loop     : true,
+  slideClass: 'feature-modal__item-flex'
+});
+
+
+// source modal
 
 let htmlPage = document.querySelector('.html-page');
 let sourceBtn = document.querySelector('.source__button');
@@ -100,47 +110,51 @@ sourceModalBtn.onclick = function() {
 let position = 0;
 const slidesToShow = 3;
 const slidesToScroll = 1;
-const container = $('.review__slider');
-const track = $('.review__slider-list');
-const item = $('.review-content');
-const btnPrev = $('.slider-control__button--left'); 
-const btnNext = $('.slider-control__button--right');
-const itemsCount = item.length;
-const itemWidth = item.width();
+const container = document.querySelector('.review__slider');
+const track = document.querySelector('.review__slider-list');
+const btnPrev = document.querySelector('.slider-control__button--left'); 
+const btnNext = document.querySelector('.slider-control__button--right');
+const items = document.querySelectorAll('.review-content');
+const itemsCount = items.length;
+const itemWidth = 768;
 const movePosition = slidesToScroll * itemWidth;
 
-item.each(function (index, item){
-  $(item).css({
-    minWidth: itemWidth
-  })
+items.forEach((item) => {
+  item.style.minWidth = `${itemWidth}px`
 })
-
-btnNext.click(function(){
+   
+btnNext.addEventListener('click', () => {
+  
   position -= movePosition;
   setPosition();
   checkBtns();
-});
+})
 
-btnPrev.click(function(){
+btnPrev.addEventListener('click', () => {
+
   position += movePosition;
   setPosition();
   checkBtns();
-});
+})
 
 const setPosition = () => { 
-  track.css({
-    transform: `translateX(${position}px)`
-  });
+  track.style.transform = `translateX(${position}px)`;
 }
 
 const checkBtns = () => {
-  btnPrev.prop('disabled', position === itemWidth);
-  // console.log(position);
-  btnNext.prop(
-    'disabled',
-    position === -itemWidth
-  );
-
-  checkBtns();
+  btnPrev.disabled = position === itemWidth;
+  btnNext.disabled = position === -itemWidth;
 }
+
+checkBtns();
+
+// 
+
+
+$().fancybox({
+  selector : '.feature-modal__list',
+  thumbs   : {
+    autoStart : false
+  }
+});
 
